@@ -4,8 +4,8 @@
 | Classes  | Status  |
 |:--------:|:-------:|
 | Class-2  | Updated |
-| Class-3  ||
-| Class-4  ||
+| Class-3  | Updated |
+| Class-4  | Updated |
 | Class-5  ||
 | Class-6  ||
 | Class-7  ||
