@@ -1,12 +1,13 @@
 # AWSoftware Bootcamp
+
 ## Exercises
 
 | Classes  | Status  |
 |:--------:|:-------:|
 | Class-2  | Updated |
-| Class-3  ||
-| Class-4  ||
-| Class-5  ||
+| Class-3  | Updated |
+| Class-4  | Updated |
+| Class-5  | Updated |
 | Class-6  ||
 | Class-7  ||
 | Class-8  ||

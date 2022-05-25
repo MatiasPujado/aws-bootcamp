@@ -1,0 +1,17 @@
+
+3 - Implemente varias versiones de una misma aplicacion con varios componentes.  En cada version modifique el LayoutManager que esta utilizando.  Especifique que Layout le resulto mas comodo, por que y cual utilizaria en cada caso.
+
+Epitome
+-------
+* Especifique que Layout le resulto mas comodo y por que:
+Grid Layout y Border Layout tienen una estructura que relativamente facil de comprender y deducir mientras se escriben, especialmente si no se tienen minimos conocimientos de diseño de UI.
+
+* Cual utilizaria en cada caso:
+
+- Grid Layout: podria utilizarse para diseñar la interfaz de una calculadora o un juego como Tic-Tac-toe.
+
+- Border Layout: podria ser el Layout padre que al hospedar en cada seccion otros layouts como por ej, en las secciones ESTE y/o OESTE podria utilizarse el Scroll Layout; en la seccion Norte y/o SUR el Flow Layout o Box Layout; en la seccion CENTER Card Layout o Grid Layout.
+
+- Card Layout: podria utilizarse de manera similar a las pestañas del explorador web o de la mayoria de los IDES, permitiendo asi tener mas de una ventana o tarjeta abierta al mismo tiempo.
+
+Creo que el resto de los Layouts (Spring, Group y Grid Bag) son bastantes complejas, imagino que pueden resultar de gran utilidad en el diseño de secciones no muy grandes que estan embedidas en una mayor.

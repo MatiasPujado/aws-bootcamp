@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Class5/Class5.iml" filepath="$PROJECT_DIR$/Class5/Class5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises.iml" filepath="$PROJECT_DIR$/Exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class5/LayoutCases/LayoutCases.iml" filepath="$PROJECT_DIR$/Class5/LayoutCases/LayoutCases.iml" />
     </modules>
   </component>
 </project>
