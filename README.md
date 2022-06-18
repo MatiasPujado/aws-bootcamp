@@ -4,13 +4,13 @@
 | Classes  | Status  |
 |:--------:|:-------:|
 | Class-2  | Updated |
-| Class-3  ||
-| Class-4  ||
-| Class-5  ||
-| Class-6  ||
-| Class-7  ||
-| Class-8  ||
-| Class-9  ||
+| Class-3  | Updated |
+| Class-4  | Updated |
+| Class-5  | Updated |
+| Class-6  | Updated |
+| Class-7  | Updated |
+| Class-8  | Updated |
+| Class-9  | Updated |
 | Class-10 ||
 | Class-11 ||
 | Class-12 ||

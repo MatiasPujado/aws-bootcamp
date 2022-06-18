@@ -1,0 +1,165 @@
+/*--- General ---*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	background: #222;
+}
+
+/*--- Navbar ---*/
+header{
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo{
+  cursor: pointer;
+  float: left;
+  padding: 10px 0;
+  color: #3262a8;
+}
+
+.title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+div.container h1.logo:hover{
+    color: #fff;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav ul li a{
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a:hover{
+  color: #1786fc;
+}
+
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+}
+
+/*--- Table ---*/
+#tbl-list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+th {
+  background-color: #1786fc;
+  color: #141414;
+}
+
+th, td{
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+    background-color: #222;
+    color: #1786fc;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*--- Form ---*/
+#form-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 305px;
+}
+
+#form input{
+    font-size: 14px;
+    color: #fff;
+    padding: 6px;
+    margin: 6px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bday {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#birthday{
+    /*width: 290px;*/
+    width: 100%;
+}
+
+#submitBttn{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #fff;
+    border: 0px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+#submitBttn:hover{
+    background-color: #1786fc;
+}
+
+#bttn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

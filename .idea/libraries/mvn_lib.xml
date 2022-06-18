@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mvn-lib">
+    <CLASSES>
+      <root url="file:///opt/apache-maven/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file:///opt/apache-maven/lib" recursive="false" />
+  </library>
+</component>
