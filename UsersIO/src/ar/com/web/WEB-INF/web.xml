@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--    User: coder       Date: 6/1/22        Time: 4:25 PM  -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!-- ========================================================== -->
+    <!-- General -->
+    <!-- ========================================================== -->
+
+    <!-- Name the application -->
+    <display-name>UsersIO</display-name>
+    <description>Enrollment of users app</description>
+
+    <!-- This app is cluster-ready -->
+    <distributable/>
+
+    <!-- Set timeout to 120 minutes -->
+    <session-config>
+        <session-timeout>120</session-timeout>
+    </session-config>
+    <!-- ========================================================== -->
+    <!-- Servlets -->
+    <!-- ========================================================== -->
+
+    <!-- Simple Servlet, provide a name, class, description and map to URL /servlet/SimpleServlet -->
+    <!--
+        <servlet>
+            <servlet-name>Main Page</servlet-name>
+            <servlet-class>ar.com.web.index.jsp</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Main Page</servlet-name>
+            <url-pattern>/</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>Insert Page</servlet-name>
+            <servlet-class>ar.com.web.insert.jsp</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Insert Page</servlet-name>
+            <url-pattern>/form</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>Update Page</servlet-name>
+            <servlet-class>ar.com.web.update.jsp</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Insert Page</servlet-name>
+            <url-pattern>/update</url-pattern>
+        </servlet-mapping>-->
+
+    <!-- ========================================================== -->
+    <!-- Context Parameters -->
+    <!-- ========================================================== -->
+
+    <context-param>
+        <description>Enable debugging for the application</description>
+        <param-name>debug</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <description>The email address of the administrator, used to send error reports.</description>
+        <param-name>webmaster</param-name>
+        <param-value>matiaspujado@gmail.com</param-value>
+    </context-param>
+    <!-- ========================================================== -->
+    <!-- Error Handler -->
+    <!-- ========================================================== -->
+
+    <!-- Define an error handler for 404 pages -->
+    <!--<error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>-->
+
+    <!-- Define an error handler for java.lang.Throwable -->
+    <!--<error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/errorThrowable.jsp</location>
+    </error-page>-->
+    <!-- ========================================================== -->
+    <!-- Welcome Files -->
+    <!-- ========================================================== -->
+
+    <!-- Define, in order of preference, which file to show when no filename is defined in the path -->
+    <!-- eg: when user goes to http://yoursite.com/ or http://yoursite.com/somefolder -->
+    <!-- Defaults are provided in the server-wide web.xml file, such as index.jsp, index.htm -->
+    <!-- Note: using this tag overrides the defaults, so don't forget to add them here -->
+    <welcome-file-list>
+        <!-- Use index.jsp if present, or index.html, otherwise just look for the normal defaults -->
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+    </welcome-file-list>
+
+    <!-- ========================================================== -->
+    <!-- MIME Types -->
+    <!-- ========================================================== -->
+    <mime-mapping>
+        <extension>css</extension>
+        <mime-type>text/css</mime-type>
+    </mime-mapping>
+
+</web-app>

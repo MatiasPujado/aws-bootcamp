@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tomcat9-src">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file:///opt/apache-tomcat-9.0.62/tomcat-9.0-doc/appdev/sample/src" />
+    </SOURCES>
+  </library>
+</component>
