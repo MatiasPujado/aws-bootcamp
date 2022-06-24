@@ -1,2 +1,3 @@
-Matias, Perez, 0978986, 2000-08-30, Teacher
-Pia, Sanchez, 86757325, 1974-04-10, Lawyer
+Matias, Pujado, 1111111, Dev, 101187
+Ana, Dominguez, 33333333, Cook, 040490
+Lautaro, Henriquez, 444444444, Lawyer, 040490

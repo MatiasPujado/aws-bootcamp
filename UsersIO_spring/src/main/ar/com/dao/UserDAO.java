@@ -1,8 +1,8 @@
 package main.ar.com.dao;
 
 
-
 import main.ar.com.entities.User;
+import org.springframework.stereotype.Repository;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -11,29 +11,20 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Repository
 public class UserDAO implements DAO {
 
-    private final String url = "/media/Work/Projects/Courses/AWSoftware/Exercises/UsersIO_mvn/src/main/webapp/resources/usersDB.txt";
+//    @Value("/media/Work/Projects/Courses/AWSoftware/Exercises/UsersIO_spring/src/main/webapp/resources/usersDB.txt")
+    private String url = "/media/Work/Projects/Courses/AWSoftware/Exercises/UsersIO_spring/src/main/webapp/resources/usersDB.txt";
+
 
     private List<User> userList;
 
-    /**
-     * No-argument constructor
-     */
     public UserDAO() {
         userList = new ArrayList<>();
     }
 
-    /**
-     * Parameterized constructor
-     *
-     * @param userList
-     */
-    public UserDAO(List<User> userList) {
-        this.userList = new ArrayList<>();
-    }
-
-    // Getters & Setters
+// Getters & Setters
 
     public List<User> getUserList() {
         return this.userList;
@@ -58,29 +49,15 @@ public class UserDAO implements DAO {
         return Optional.of(new File(getUrl())).orElseThrow(() -> new RuntimeException("Error finding DB file."));
     }
 
-    /**
-     * Creates a User Object
-     *
-     * @return user
-     */
+
     @Override
     public User create() {
-        return new User();
+        return User.builder().build();
     }
 
-    /**
-     * Creates a user object
-     *
-     * @param name
-     * @param lastName
-     * @param idNumber
-     * @param profession
-     * @param dateOfBirth
-     * @return user
-     */
     @Override
     public User create(String name, String lastName, String idNumber, String dateOfBirth, String profession) {
-        return new User(name, lastName, idNumber, dateOfBirth, profession);
+        return User.builder().name(name).lastName(lastName).idNumber(idNumber).dateOfBirth(dateOfBirth).profession(profession).build();
     }
 
     /**
@@ -116,9 +93,8 @@ public class UserDAO implements DAO {
 
     /**
      * Checks if the specified user already exists in DB, then adds it to the list, sorts it and lastly saves it in the DB
-     *
      * @param user
-     * @return Exception
+     * @throws IOException
      */
     @Override
     public void addUserToDB(User user) throws IOException {
@@ -150,7 +126,7 @@ public class UserDAO implements DAO {
 
         while ((registry = bufferedReader.readLine()) != null) {
             field = registry.split(", ");
-            aux.add(this.create(field[0], field[1], field[2], field[3], field[4]));
+            aux.add(User.builder().name(field[0]).lastName(field[1]).idNumber(field[2]).dateOfBirth(field[3]).profession(field[4]).build());
         }
         bufferedReader.close();
         return aux;
